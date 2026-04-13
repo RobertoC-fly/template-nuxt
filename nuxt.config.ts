@@ -7,11 +7,15 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
+    '@pinia/nuxt',
   ],
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
     public: {
       apiBaseUrl: process.env.API_BASE_URL,
     },
+  },
+  pinia: {
+    storesDirs: ['./stores/**'],
   },
 })
