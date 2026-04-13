@@ -14,6 +14,8 @@ Template completo para agilizar o desenvolvimento de novos projetos com **Nuxt 4
 
 - **[@nuxt/ui 4.6.1](https://ui.nuxt.com/)** - Biblioteca de componentes UI
 - **[TailwindCSS 4.2.2](https://tailwindcss.com/)** - Framework CSS utility-first
+- **[clsx 2.1.1](https://github.com/lukeed/clsx)** - Utility para classes condicionais
+- **[tailwind-merge](https://github.com/dcastil/tailwind-merge)** - Merge inteligente de classes Tailwind
 - **[@nuxt/fonts 0.14.0](https://fonts.nuxt.com/)** - Otimização automática de fontes
 
 ### State Management & Data Fetching
@@ -41,7 +43,8 @@ Template completo para agilizar o desenvolvimento de novos projetos com **Nuxt 4
 ```
 app/
 ├── lib/                    # Configurações e utilitários core
-│   └── axios.ts           # Cliente HTTP configurado
+│   ├── axios.ts           # Cliente HTTP configurado
+│   └── utils.ts           # Utilitário cn() para classes CSS
 ├── services/              # Serviços de API
 │   └── api/
 │       └── testReq/       # Exemplo de serviço tipado
@@ -75,6 +78,7 @@ tests/
 - Componentes UI prontos (@nuxt/ui)
 - Sistema de toast para feedback
 - TailwindCSS configurado
+- Utility `cn()` para classes condicionais e merge inteligente
 - Suporte a ícones (Lucide)
 
 ### 📊 Gerenciamento de Estado
