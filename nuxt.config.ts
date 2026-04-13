@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ['@nuxt/fonts', '@nuxt/image', '@nuxtjs/google-fonts']
-})
+  modules: ["@nuxt/ui", "@nuxt/image"],
+  css: ["~/assets/css/main.css"],
+});
