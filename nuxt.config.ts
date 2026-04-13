@@ -9,4 +9,9 @@ export default defineNuxtConfig({
     '@nuxt/test-utils/module',
   ],
   css: ['~/assets/css/main.css'],
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: process.env.API_BASE_URL,
+    },
+  },
 })
