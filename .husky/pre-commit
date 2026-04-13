@@ -1,0 +1,8 @@
+echo "Executando yarn test..."
+echo "Em caso de falha nos testes, corrija os testes listados abaixo antes de realizar o commit."
+yarn test
+
+echo "Executando yarn run lint:check..."
+echo "Em caso de erros ou warnings, rode o comando yarn run lintfix e corrija a lista abaixo antes de realizar o commit."
+
+yarn run lint:check
