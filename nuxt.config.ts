@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
     '@pinia/nuxt',
+    '@vueuse/nuxt',
   ],
   css: ['~/assets/css/main.css'],
   runtimeConfig: {
